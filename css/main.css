@@ -1,18 +1,101 @@
 body {
+  font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
   background-color: #fff;
   /* Enlaza la tipografia Open Sans */
-  font-family: 'Open Sans', sans-serif;
 }
 
-/*Contenedor Flexbox*/
-.flex-container{
-	display: flex;
+a{
+ color: #373B47;
+ text-decoration: none;
 }
 
-/*Menu*/
+a:hover{
+ color: #E95853;
+}
+
+#home{
+	height: 600px;
+	margin-top: 70px;
+
+	background-image: url(../assets/images/bg-home.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: whitesmoke;
+}
+
+/*services*/
+
+#services{
+	background-color: #F17C72;
+	text-align: center;
+	color: #fff;
+	padding: 70px;
+}
+
+#services.flex-container{
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+footer{
+	background-color: #373B47;
+	color: whitesmoke;
+ 	text-align: center;
+ 	height: 70px;
+ 	padding-top: 7px;
+
+}
+
+#work.flex-container{
+	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 50px;
+}
+
+img{
+	width: 100%;
+}
+
+i{
+	background-color: whitesmoke;
+}
+
+#imagenes.flex-container{/*alinear en filas las imagenes ordenadas en div dentro de otro div que a su vez está en una section*/
+
+flex-direction: row;
+justify-content: center;
+
+}
+
+
+
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.link{
+    font-weight: 700;
+    padding: 21px;
+    display: inline-block;
+}
+
 .menu{
 	background-color: white;
 	position: fixed;
@@ -28,9 +111,44 @@ body {
 .logo-container{
 	margin-left: auto;
 	margin-right: 20px;
+
 }
 
 .flex-container .logo{
 	width: 70px;
 	height: 70px;
+}
+
+.text-home{
+	font-size: 2.4em;
+}
+
+.btn-home{
+ 	background: #2Ecc71;
+ 	color: #fff;
+ 	padding: 11px 20px;
+ 	border-radius: 1px;
+ 	font-weight: 500;
+ 	text-transform: uppercase;
+ 	margin-top: 63px;
+ 	display: inline-block;
+ 	font-size: 14px;
+ }
+
+ .box-services{
+ 	font-size: 1.2em;
+ 	font-weight: bold;
+ }
+
+ .imagen{
+ 	width: 80%;	
+ }
+
+ .galeria-imagen{
+ 	padding: 50px;
+
+ }
+
+.grupo-imagenes{
+	text-align: center;
 }
