@@ -34,7 +34,6 @@ a:hover{
 }
 
 /*services*/
-
 #services{
 	background-color: #F17C72;
 	text-align: center;
@@ -138,6 +137,8 @@ justify-content: center;
  .box-services{
  	font-size: 1.2em;
  	font-weight: bold;
+ 	display: inline-block;
+ 	width: 200px;
  }
 
  .imagen{
